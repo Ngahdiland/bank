@@ -6,6 +6,7 @@ import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
 import { usePathname } from "@/node_modules/next/navigation";
 import React from "react";
+import Footer from "./Footer";
 
 const SideBar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
@@ -45,7 +46,7 @@ const SideBar = ({ user }: SiderbarProps) => {
         })}
         USER
       </nav>
-      FOOTER 
+      <Footer user={user} />
     </section>
   );
 };
